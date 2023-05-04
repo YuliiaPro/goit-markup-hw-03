@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --dark: #2e2f42;
   --text: #434455;
@@ -11,12 +16,50 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--text);
 }
+
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -30,7 +73,18 @@ body {
 .span-logo {
   color: var(--dark);
 }
+.menu-list {
+  display: flex;
+  margin-left: 76px;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .menu-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -44,6 +98,13 @@ body {
 }
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+.address-list {
+  display: flex;
+}
+.address-item:not(:last-child) {
+  margin-right: 40px;
 }
 .address-link {
   font-style: normal;
@@ -61,6 +122,9 @@ body {
   background-color: var(--dark);
 }
 .main-title {
+  display: block;
+  padding-top: 0;
+  margin-bottom: 48px;
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
@@ -71,6 +135,11 @@ body {
 }
 
 .order-service-btn {
+  display: inline-block;
+  padding: 16px 32px;
+  min-width: 169px;
+  border-radius: 4px;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -96,6 +165,22 @@ body {
   color: var(--dark);
   text-align: center;
   text-transform: capitalize;
+}
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+.section-features-container {
+  padding-bottom: 0;
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
 }
 .title-item {
   font-style: normal;
