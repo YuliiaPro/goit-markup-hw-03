@@ -50,6 +50,13 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.pad-marg-nav {
+  padding: 0;
+  margin: 0;
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .page-header-container {
   display: flex;
   align-items: center;
@@ -102,6 +109,7 @@ img {
 }
 .address-list {
   display: flex;
+  margin-left: auto;
 }
 .address-item:not(:last-child) {
   margin-right: 40px;
@@ -150,6 +158,8 @@ img {
   color: var(--main-color);
   border: 1px solid #000000;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order-service-btn:hover,
@@ -165,10 +175,14 @@ img {
   color: var(--dark);
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .features-list {
   display: flex;
   justify-content: space-between;
+}
+.features-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .section-features-container {
   padding-bottom: 0;
@@ -177,10 +191,23 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.services-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
 
 .team-list {
   display: flex;
   justify-content: space-between;
+}
+.team-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.team-img-content {
+  padding: 32px 12px;
+}
+.text-centr {
+  text-align: center;
 }
 .title-item {
   font-style: normal;
@@ -189,6 +216,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .paragraph {
   font-style: normal;
@@ -221,6 +249,12 @@ img {
   background: var(--light);
   border: 1px solid #e7e9fc;
   cursor: pointer;
+}
+.portfolio-list {
+  display: flex;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-title-item {
   font-style: normal;
