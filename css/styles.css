@@ -39,6 +39,10 @@ ul {
 img {
   display: block;
 }
+button {
+  border: none;
+  border-top: none;
+}
 .container {
   width: 1158px;
   margin-left: auto;
@@ -210,13 +214,11 @@ img {
 }
 .team-item {
   flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:not(:last-child) {
   margin-right: 24px;
-}
-.team-img {
-  border-radius: 0px 0px 4px 4px;
 }
 .team-img-content {
   padding: 32px 16px;
