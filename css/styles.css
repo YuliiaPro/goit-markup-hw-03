@@ -319,7 +319,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-.logo {
+.logo-footer {
   display: inline-block;
   margin-bottom: 16px;
 }
