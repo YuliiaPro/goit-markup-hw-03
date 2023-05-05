@@ -313,10 +313,6 @@ img {
 .portfolio-title-item {
   margin-bottom: 8px;
 }
-.page-footer-container {
-  display: flex;
-  flex-direction: column;
-}
 .logo-footer {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
