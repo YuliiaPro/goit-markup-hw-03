@@ -122,6 +122,12 @@ img {
 .address-link:focus {
   color: var(--pressed-state);
 }
+.section-hero-container {
+  display: flex;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  flex-direction: column;
+}
 .section-hero {
   background-color: var(--dark);
 }
@@ -136,9 +142,7 @@ img {
   color: var(--main-color);
   text-align: center;
 }
-
 .order-service-btn {
-  display: inline-block;
   padding: 16px 32px;
   min-width: 169px;
   border-radius: 4px;
@@ -153,6 +157,7 @@ img {
   color: var(--main-color);
   border: 1px solid #000000;
   cursor: pointer;
+  margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -301,9 +306,12 @@ img {
   margin-bottom: 8px;
 }
 .page-footer-container {
+  display: flex;
   padding-top: 100px;
   padding-bottom: 100px;
+  flex-direction: column;
 }
-.paragraph {
+.paragraph-footer {
   margin-top: 16px;
+  width: 25%;
 }
